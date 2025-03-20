@@ -1,0 +1,41 @@
+{
+  "name": "compwright/php-jwks",
+  "description": "JSON Web Key tools for PHP per RFC-7517",
+  "type": "library",
+  "keywords": [
+    "jwk",
+    "jwks",
+    "rfc7517"
+  ],
+  "homepage": "https://github.com/compwright/php-jwks",
+  "authors": [
+    {
+      "name": "Jonathon Hill",
+      "email": "jonathon@compwright.com",
+      "homepage": "https://compwright.com",
+      "role": "Developer"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.3.0 || ^8.4.0",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "phpseclib/phpseclib": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Compwright\\JWKS\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Compwright\\JWKS\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.72",
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^10.5"
+  }
+}
